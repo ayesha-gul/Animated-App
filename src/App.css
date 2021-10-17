@@ -1,0 +1,635 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+.wrapper{
+  position: relative;
+  min-height: 20vh;
+  overflow: hidden;
+  background-color: cadetblue;
+}
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 41px 0;
+  z-index: 20;
+  background-color: #fff;
+  transition: 0.5s;
+
+}
+.shell{
+  max-width: 1180px;
+  margin: auto;
+}
+.header  .lang-bar{
+  position: absolute;
+  right: 25px;
+  top: 0;
+  transition: all .5s;
+  ;
+}
+.nav{
+  font-family: sans-serif;
+  font-weight: 500;
+  color: #fff;
+  text-transform: capitalize;
+  margin-left: 90px;
+  padding:  10px 0 0 0;
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+  width: 125px;
+  margin-top: 3px;
+}
+.header .lang-bar ul , .header .lang-bar ul.nav {
+  list-style: none;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  
+
+}
+/* .header .lang-bar ul li a.active, .header .lang-bar
+ul.nav li a.active{
+  color: #f9f7f7;
+}
+
+.header.new .lang-bar ul li a.active {
+  color: #516c92;
+} */
+.header.new .lang-bar a.active {
+  color: #7b8aa9 !important;
+}
+.header .lang-bar ul li a, .header .lang-bar ul.nav li a {
+  color: #abbcd8;
+  font-size: 12px;
+  text-decoration: none;
+  transition: all .5s;
+  display: inline;
+}
+.header.new .lang-bar a.active:hover {
+  color: #abbcd8 !important;
+}
+.header.new .lang-bar a:hover{
+  color: #c3cedf;
+}
+.header__iner {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  
+  
+}
+.header.new .logo {
+  background-image: url(https://syscoin.org/assets/images/svg/logo-color-full.svg);
+  background-position: left center;
+  width: 190px !important;
+  
+  height: 44px;
+  display: inline-block;
+  margin-top: 8px;
+  background-size: cover;
+ 
+
+}
+.header .header__content{
+  flex: none !important;
+
+  width: 60%;
+  margin-right: 6%;
+  
+}
+.navi{
+  padding: 10px 0 0 0;
+  font-weight: 500;
+  
+  text-transform: capitalize;
+  color: black;
+
+}
+.navi ul{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 3px;
+  
+  
+
+}
+/* .navi ul li{
+  list-style-type: none;
+  padding-bottom: 0;
+  margin-bottom: 6px;
+} */
+.parent{
+  display: flex;
+  justify-content: space-between;
+  
+
+}
+.dua{
+  background-color: whitesmoke;
+ 
+}
+.navi ul li{
+  list-style-type:none ;
+
+}
+.navi ul li a {
+
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.2;
+  font-family: 'Poppins', sans-serif;
+  color: #27292e;
+}
+.navi ul li.explorer{
+  width: 90px;
+  height: 40px;
+  background-color:  #ece7f7;
+  text-align: center;
+  
+  
+}
+
+.navi ul li.explorerlast{
+  width: 90px;
+  height: 40px;
+  background-color: #ece7f7;
+  text-align: center;
+}
+.explorer{
+  position: relative;
+  z-index: 5;
+  bottom: 6px;
+  right: 18px;
+  border-radius: 5px;
+}
+.explorerlast{
+  position: absolute;
+  width: 130px;
+  right: 88px;
+  top: 48px;
+  border-radius: 5px;
+
+
+}
+.explorer #btn{
+  position: absolute;
+  width: 120px;
+  left: -14px;
+  top: 8px;
+  transition: .5s;
+}
+.explorer #btn a{
+  right: 5px;
+}
+.explorerlast #btn1{
+  position: absolute;
+  width: 120px;
+  left: -14px;
+  top: 8px;
+  transition: .5s;
+
+}
+.explorer #btn:hover, .explorerlast #btn1:hover{
+  color: #c6c8cc;
+ 
+}
+
+/* =======section2====== */
+
+#blue-pic{
+  width: 440px;
+  
+  
+  margin-right: -90px;
+  position: relative;
+  top: 0;
+  margin-top: 110px;
+  z-index: 2;
+}
+.main{
+  display: flex;
+  justify-content: space-between;
+ 
+}
+.col{
+  
+  width: 100%;
+  height: 100vh;
+
+ 
+}
+.main .prt1{
+  flex-basis: 50%;
+  /* background-color: peru; */
+  margin-top: 40px;
+}
+.main .prt1 h1{
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 70px;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+.main .prt1 p{
+  font-size: 24px;
+  font-weight: 350;
+  line-height: 43px;
+  padding-right: 160px;
+  margin-bottom: 50px;
+  color: #555861;
+  font-family: 'Poppins', sans-serif;
+}
+
+.main .prt1 a{
+  font-size: 22px;
+  font-weight: 500;
+  background: #101d48;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: #fff;
+  transition: all .5s;
+ outline: none;
+ font-family: 'Poppins', sans-serif;
+}
+.main .prt1 a:hover{
+  background-color:#2e3d6d;
+  cursor: pointer;
+}
+.main .prt2{
+
+ 
+  margin-top: 100px;
+  margin-right: 33px;
+}
+.main #div{
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 12px;
+  font-family: 'Poppins', sans-serif;
+  font-style: unset;
+}
+.main .prt2 ul li{
+  
+  padding: 9px 0;
+  font-size: 23px;
+  font-weight: 300;
+  font-style: italic;
+  margin-left: 24px;
+  
+}
+.main #wada{
+  position: absolute;
+ 
+  right: 310px;
+  margin-top: 20px;
+  color: #555861;
+}
+
+/* =======section3====== */
+
+.main-sec{
+  width: 100%;
+  height: 1500px;
+  background-color: #101d48;
+  color: #fff;
+ 
+  margin-top: -105px;
+}
+.sec {
+  
+  margin-top: 100px;
+}
+.sec h2{
+  font-size: 31px;
+  font-weight: 750;
+  margin: 0 0 10px 0;
+  padding-top: 100px;
+}
+.sec p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #8f889b;
+  padding-top: 12px;
+}
+.main-sec .third{
+  width: 100%;
+  padding: 20px 10px 0;
+  overflow: hidden;
+
+  margin-top: 52px;
+}
+.third .nadi{
+  display: flex;
+  justify-content: space-around;
+  
+}
+.third .nadi h3{
+  font-size: 24px;
+  font-weight: 680;
+  text-align: left;
+}
+.third .nadi p{
+  font-size: 16px;
+  font-weight: 497;
+  line-height: 28px;
+  margin-top: 14px;
+  text-align: left;
+  
+}
+.third .cont2{
+ transition: all .5s;
+
+}
+.third .cont2:hover{
+  transform: translateY(-8px); 
+  cursor: pointer;
+}
+.third .cont1{
+  
+  transition: all .5s;
+}
+.third .cont1:hover{
+  transform: translateY(-7px);
+  cursor: pointer;
+}
+.third .cont3{
+  transition: all .5s;
+}
+.third .cont3:hover{
+  transform: translateY(-7px);
+  cursor: pointer;
+}
+.cont4{
+  width: 100%;
+  padding: 20px 160px 0;
+  overflow: hidden;
+ 
+ display: flex;
+ justify-content: space-between;
+ margin-top: 90px;
+ 
+}
+.cont4 .right img{
+  
+}
+.cont4 .left{
+
+  margin-right: 410px;
+  margin-top: 12px;
+  line-height: 32px;
+  font-weight: 470;
+}
+.disc h2{
+  margin-top: 80px;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.discover .fourth{
+  width: 100%;
+  padding: 20px 10px 0;
+  overflow: hidden;
+
+margin-top: 50px;
+display: flex;
+justify-content: space-around;
+}
+
+.discover .fourth p{
+ 
+  margin-top: 10px;
+ text-align: center;
+ font-size: 19px;
+ font-weight: 500;
+ line-height: 30px;
+}
+.discover .line p{
+  margin-top: 100px;
+  font-size: 28px;
+  font-weight: 370;
+  
+}
+.discover .line strong{
+color: #f8c65c;
+}
+.disc2{
+  transition:  all .5s;
+}
+.discover .disc2:hover{
+  transform: translateX(20px);
+  cursor: pointer;
+ 
+}
+.disc1{
+  transition: all .5s;
+}
+.discover .disc1:hover{
+  transform: translateX(-20px);
+  cursor: pointer;
+}
+.disc4 {
+  transition: all .5s;
+}
+.discover .disc4:hover{
+  transform: translateX(20px);
+  cursor: pointer;
+}
+.disc3 {
+  transition: all .5s;
+}
+.discover .disc3:hover{
+  transform: translateX(-20px);
+  cursor: pointer;
+}
+
+/* =======section4====== */
+
+.source .material p strong{
+   font-size: 24px;
+
+   font-weight: 500;
+   font-family: 'Poppins', sans-serif;
+}
+
+.source .material p{
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 36px;
+  display: block;
+  margin-top: 82px;
+  color: #27292e;
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+.source .logos {
+
+  max-width: 960px;
+  margin: 0 auto;
+  
+  height: 280px;
+  margin-top: 52px;
+}
+/* .source .logos img{
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+} */
+.source .logos .block1{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+.source .logos .block2{
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+
+}
+.source .logos .logo6{
+  
+  margin-top: 52px;
+  margin-right: 670px ;
+  position: absolute;
+}
+.source .logos .logo7{
+  
+  margin-top: 52px;
+  margin-right: 199px;
+  position: absolute;
+}
+
+.source .logos .logo8{
+  
+  margin-top: 28px;
+  position: absolute;
+  margin-left: 52px;
+}
+
+.source .logos .logo9{
+  position: absolute;
+  margin-left: 400px;
+  margin-top: 28px;
+}
+.source .logos .logo10{
+  
+  position: absolute;
+  margin-left: 750px;
+  margin-top: 42px;
+}
+.source .logos .logo11{
+  position: absolute;
+  margin-top: 160px;
+  margin-left: 28%;
+}
+
+/* =======section5====== */
+.bg-blue{
+
+  width: 100%;
+  height: 1350px;
+  background-color: #101d48;
+  color: #fff;
+}
+.bg-blue .lesson{
+  margin-top: 105px;
+  position: absolute;
+
+}
+.bg-blue .lesson h4{
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  font-family: 'Poppins', sans-serif;
+}
+.bg-blue .lesson p{
+  font-size: 20px;
+  font-weight: 300;
+  color: #fff;
+  font-family: 'poppins',sans-serif;
+  line-height: 36px;
+}
+.bg-blue .big-pic{
+ margin-top: 32px;
+}
+
+/* =======section6====== */
+.tech-stack p strong {
+  font-weight: 400;
+  font-family: 'poppins',sans-serif;
+}
+.tech-stack p{
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 36px;
+  margin-top: 134px;
+  font-family: 'poppins',sans-serif;
+}
+
+/* =======section7====== */
+.bg-last{
+  width: 100%;
+  height: 550px;
+  background-color: #101d48;
+  color: #fff;
+}
+.bg-last .partners{
+     display: flex;
+     width: 90%;
+     justify-content: space-around;
+    
+     position: absolute;
+     margin-top: 190px;
+}
+.bg-last .partners p{
+  text-align: center;
+  padding-top: 9px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+}
+#git{
+  padding-top: 22px;
+  
+}
+
+/* =======section8====== */
+.footer{
+  background: #27292d;
+  padding: 45px 0 10px;
+  overflow: hidden;
+  color: #fff;
+  height: 500px;
+}
+.footer .foot {
+  background-image: url(https://syscoin.org/assets/images/svg/logo-full.svg);
+  width: 180px;
+  margin-bottom: 45px;
+  display: inline-block;
+  height: 41px;
+  margin-top: 8px;
+  background-size:cover;
+  background-position: center;
+ 
+
+}
+.footer .half{
+  width: 40%;
+  background-color: burlywood;
+  font-family: 'poppins',sans-serif;
+}
+.footer .half h2{
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  line-height: 1.65;
+}
